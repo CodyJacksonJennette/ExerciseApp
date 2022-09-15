@@ -1,0 +1,250 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+
+                            /* ...or hosted services like Google Fonts */
+/* @import url(//fonts.googleapis.com/css?family=Font+Name);*/
+
+
+
+                            /* npm install modern-normalize 
+                              Resets elements for browser consistancy.  
+                              http://nicolasgallagher.com/about-normalize-css/ 
+                            */
+
+/* @import "component1.css";   /* Component-specific stylesheets, if any */
+
+
+/*   ----- Variables  Optional-----  
+:root {
+  --custom-color:;
+  --custom-size:;
+}
+*/
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {                     /* Can alternatively define in html {} or :root {} */
+  color:cyan;
+  background-color:white;
+  border:10px solid silver;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:larger;
+  margin:auto;
+  padding:10px;
+  text-align:center;
+  background-color:black;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  color:cyan;
+  background-color:gray;
+  font-size:medium;
+  font-weight:bold;
+  padding:15px;
+  margin:auto;
+  vertical-align:middle;
+  border:0px;
+  text-decoration:dotted;
+}
+nav a {
+  background-color:black;
+  border:1px solid white;
+  font-size:medium;
+  font-weight:bold;
+  padding:7px;
+  margin:20px;
+  vertical-align:middle;
+  text-decoration:dotted;
+  box-shadow: -3px 3px cyan, -2px 2px cyan, -1px 1px cyan;
+}
+nav a:hover {
+  background-color:gray;
+  color:black;
+  font-size:medium;
+  font-weight:bold;
+  padding:7px;
+  margin:20px;
+  vertical-align:middle;
+}
+nav a:active {
+  background-color:cyan;
+  color: black;
+  font-size:medium;
+  font-weight:bold;
+  padding:7px;
+  margin:20px;
+  vertical-align:middle;
+  box-shadow: none;
+}
+nav a:visited {
+  color: white;
+  font-size:medium;
+  font-weight:bold;
+  padding:5px;
+  margin:5px;
+  vertical-align:middle;
+}
+
+/*  ----- Page layout blocks -----  */
+header, footer {
+  color:black;
+  background-color:cyan;
+  font-size:large;
+  font-weight:bold;
+  padding:5px;
+  text-align:center;
+}
+main {
+  background-color:black;
+  color:cyan;
+  font-size:medium;
+  font-weight:normal;
+  margin:10px;
+  padding:3px;
+  min-height:850px;
+}
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+footer {
+  position: fixed;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2 {} /* Define consistant font family.*/
+h1 {}
+h2 {
+  color:white;
+}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+
+/*  ----- Table ----- */
+table {
+  border-collapse:collapse;
+  border:3px solid white;
+  width:500px;
+  padding:10px;
+  margin:0 auto;
+  width:auto;
+}
+caption {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:xx-large;
+  padding:10px;
+  color:white;
+}
+thead {}
+tbody {}
+tfoot {}
+tr {
+  background-color:cyan;
+  padding:2px;
+}
+th {
+  text-align: center;
+  background-color:black;
+  border: 2px solid black;
+}
+td {
+  border: 2px solid black;
+  color:black;
+  text-align: center;
+  height: 30px;
+  padding:2px;
+}
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+fieldset {
+  border: 2px solid white;
+  margin: auto;
+  padding: 20px;
+}
+  legend {}
+label {
+  display:block;
+  padding:10px;
+}
+  button {
+    background-color:cyan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:larger;
+    color:black;
+    border: 1px solid gray;
+    width: 100px;
+    padding:5px;
+    box-shadow: -3px 3px white, -2px 2px white, -1px 1px white;
+  }
+  button:active {
+    background-color:black;
+    color:white;
+    box-shadow: none;
+  }
+  input {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:larger;
+    padding:5px;
+    text-align:center;
+  }
+  output {}
+  meter {}
+  progress {}
+  select {}
+    optgroup {}
+    option {}
+  textarea {}
+
+
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
